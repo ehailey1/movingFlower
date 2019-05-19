@@ -1,0 +1,524 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18446 ]
+[d frameptr 6 ]
+"88 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/tmr2.c
+[e E10865 . `uc
+TMR2_ROP_STARTS_TMRON 0
+TMR2_ROP_STARTS_TMRON_ERSHIGH 1
+TMR2_ROP_STARTS_TMRON_ERSLOW 2
+TMR2_ROP_RESETS_ERSBOTHEDGE 3
+TMR2_ROP_RESETS_ERSRISINGEDGE 4
+TMR2_ROP_RESETS_ERSFALLINGEDGE 5
+TMR2_ROP_RESETS_ERSLOW 6
+TMR2_ROP_RESETS_ERSHIGH 7
+TMR2_OS_STARTS_TMRON 8
+TMR2_OS_STARTS_ERSRISINGEDGE 9
+TMR2_OS_STARTS_ERSFALLINGEDGE 10
+TMR2_OS_STARTS_ERSBOTHEDGE 11
+TMR2_OS_STARTS_ERSFIRSTRISINGEDGE 12
+TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE 13
+TMR2_OS_STARTS_ERSRISINGEDGEDETECT 14
+]
+"94
+[e E10882 . `uc
+TMR2_T2INPPS 0
+TMR2_RESERVED 1
+TMR2_T4POSTSCALED 2
+TMR2_T6POSTSCALED 3
+TMR2_CCP1_OUT 4
+TMR2_CCP2_OUT 5
+TMR2_CCP3_OUT 6
+TMR2_CCP4_OUT 7
+TMR2_PWM6_OUT 8
+TMR2_PWM7_OUT 9
+TMR2_CMP1_OUT 10
+TMR2_CMP2_OUT 11
+TMR2_ZCD_OUTPUT 12
+TMR2_CLC1_OUT 13
+TMR2_CLC2_OUT 14
+TMR2_CLC3_OUT 15
+TMR2_CLC4_OUT 16
+TMR2_RESERVED_2 17
+]
+"10 /Applications/microchip/xc8/v2.05/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 /Applications/microchip/xc8/v2.05/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 /Applications/microchip/xc8/v2.05/pic/sources/c99/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"14 /Users/Evan/MPLABXProjects/LEDmovingflower.X/controller.c
+[v _controllerTask controllerTask `(v  1 e 1 0 ]
+"20 /Users/Evan/MPLABXProjects/LEDmovingflower.X/led.c
+[v _LED_setColor LED_setColor `(v  1 e 1 0 ]
+"26
+[v _colorCycle colorCycle `(v  1 e 1 0 ]
+"36
+[v _colorCycle_init colorCycle_init `(v  1 e 1 0 ]
+"26 /Users/Evan/MPLABXProjects/LEDmovingflower.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"50 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"62
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"76
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/pwm1.c
+[v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
+"82
+[v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
+"64 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/pwm2.c
+[v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
+"82
+[v _PWM2_LoadDutyValue PWM2_LoadDutyValue `(v  1 e 1 0 ]
+"64 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+"82
+[v _PWM3_LoadDutyValue PWM3_LoadDutyValue `(v  1 e 1 0 ]
+"64 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/pwm4.c
+[v _PWM4_Initialize PWM4_Initialize `(v  1 e 1 0 ]
+"82
+[v _PWM4_LoadDutyValue PWM4_LoadDutyValue `(v  1 e 1 0 ]
+"62 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"100
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+"111
+[v _TMR2_Stop TMR2_Stop `(v  1 e 1 0 ]
+"122
+[v _TMR2_Counter8BitGet TMR2_Counter8BitGet `(uc  1 e 1 0 ]
+"136
+[v _TMR2_Counter8BitSet TMR2_Counter8BitSet `(v  1 e 1 0 ]
+"147
+[v _TMR2_Period8BitSet TMR2_Period8BitSet `(v  1 e 1 0 ]
+"25 /Users/Evan/MPLABXProjects/LEDmovingflower.X/servo.c
+[v _moveRight moveRight `(v  1 e 1 0 ]
+"36
+[v _moveLeft moveLeft `(v  1 e 1 0 ]
+[s S657 . 4 `uc 1 red 1 0 `uc 1 blue 1 1 `uc 1 green 1 2 `uc 1 white 1 3 ]
+"27 /Users/Evan/MPLABXProjects/LEDmovingflower.X/led.h
+[v _autocolors autocolors `[25]S657  1 e 100 @10124 ]
+[s S723 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"510 /Applications/microchip/xc8/v2.05/pic/include/pic16f18446.h
+[u S729 . 1 `S723 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES729  1 e 1 @13 ]
+"597
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+"647
+[v _TRISB TRISB `VEuc  1 e 1 @19 ]
+[s S667 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"661
+[u S673 . 1 `S667 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES673  1 e 1 @19 ]
+"686
+[v _TRISC TRISC `VEuc  1 e 1 @20 ]
+"748
+[v _LATA LATA `VEuc  1 e 1 @24 ]
+"798
+[v _LATB LATB `VEuc  1 e 1 @25 ]
+[s S682 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"812
+[u S688 . 1 `S682 1 . 1 0 ]
+[v _LATBbits LATBbits `VES688  1 e 1 @25 ]
+"837
+[v _LATC LATC `VEuc  1 e 1 @26 ]
+[s S25 . 1 `uc 1 C1TSEL 1 0 :2:0 
+`uc 1 C2TSEL 1 0 :2:2 
+`uc 1 C3TSEL 1 0 :2:4 
+`uc 1 C4TSEL 1 0 :2:6 
+]
+"10328
+[u S30 . 1 `S25 1 . 1 0 ]
+[v _CCPTMRS0bits CCPTMRS0bits `VES30  1 e 1 @542 ]
+"10385
+[v _T2TMR T2TMR `VEuc  1 e 1 @652 ]
+"10390
+[v _TMR2 TMR2 `VEuc  1 e 1 @652 ]
+"10439
+[v _T2PR T2PR `VEuc  1 e 1 @653 ]
+"10444
+[v _PR2 PR2 `VEuc  1 e 1 @653 ]
+"10493
+[v _T2CON T2CON `VEuc  1 e 1 @654 ]
+[s S254 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"10529
+[s S258 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+]
+[s S266 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+[s S270 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+[u S279 . 1 `S254 1 . 1 0 `S258 1 . 1 0 `S266 1 . 1 0 `S270 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES279  1 e 1 @654 ]
+"10639
+[v _T2HLT T2HLT `VEuc  1 e 1 @655 ]
+[s S147 . 1 `uc 1 MODE 1 0 :5:0 
+`uc 1 CKSYNC 1 0 :1:5 
+`uc 1 CKPOL 1 0 :1:6 
+`uc 1 PSYNC 1 0 :1:7 
+]
+"10672
+[s S152 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+`uc 1 MODE4 1 0 :1:4 
+]
+[s S158 . 1 `uc 1 T2MODE 1 0 :5:0 
+`uc 1 T2CKSYNC 1 0 :1:5 
+`uc 1 T2CKPOL 1 0 :1:6 
+`uc 1 T2PSYNC 1 0 :1:7 
+]
+[s S163 . 1 `uc 1 T2MODE0 1 0 :1:0 
+`uc 1 T2MODE1 1 0 :1:1 
+`uc 1 T2MODE2 1 0 :1:2 
+`uc 1 T2MODE3 1 0 :1:3 
+`uc 1 T2MODE4 1 0 :1:4 
+]
+[u S169 . 1 `S147 1 . 1 0 `S152 1 . 1 0 `S158 1 . 1 0 `S163 1 . 1 0 ]
+[v _T2HLTbits T2HLTbits `VES169  1 e 1 @655 ]
+"10767
+[v _T2CLKCON T2CLKCON `VEuc  1 e 1 @656 ]
+"10847
+[v _T2RST T2RST `VEuc  1 e 1 @657 ]
+[s S216 . 1 `uc 1 RSEL 1 0 :5:0 
+]
+"10874
+[s S218 . 1 `uc 1 RSEL0 1 0 :1:0 
+`uc 1 RSEL1 1 0 :1:1 
+`uc 1 RSEL2 1 0 :1:2 
+`uc 1 RSEL3 1 0 :1:3 
+`uc 1 RSEL4 1 0 :1:4 
+]
+[s S224 . 1 `uc 1 T2RSEL 1 0 :5:0 
+]
+[s S226 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+`uc 1 T2RSEL1 1 0 :1:1 
+`uc 1 T2RSEL2 1 0 :1:2 
+`uc 1 T2RSEL3 1 0 :1:3 
+`uc 1 T2RSEL4 1 0 :1:4 
+]
+[u S232 . 1 `S216 1 . 1 0 `S218 1 . 1 0 `S224 1 . 1 0 `S226 1 . 1 0 ]
+[v _T2RSTbits T2RSTbits `VES232  1 e 1 @657 ]
+"12081
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @780 ]
+"12101
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @781 ]
+"12121
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @782 ]
+[s S38 . 1 `uc 1 MODE 1 0 :4:0 
+`uc 1 FMT 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"12158
+[s S44 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+]
+[s S49 . 1 `uc 1 CCP1MODE 1 0 :4:0 
+`uc 1 CCP1FMT 1 0 :1:4 
+`uc 1 CCP1OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 CCP1EN 1 0 :1:7 
+]
+[s S55 . 1 `uc 1 CCP1MODE0 1 0 :1:0 
+`uc 1 CCP1MODE1 1 0 :1:1 
+`uc 1 CCP1MODE2 1 0 :1:2 
+`uc 1 CCP1MODE3 1 0 :1:3 
+]
+[s S60 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 P1M1 1 0 :1:7 
+]
+[u S63 . 1 `S38 1 . 1 0 `S44 1 . 1 0 `S49 1 . 1 0 `S55 1 . 1 0 `S60 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES63  1 e 1 @782 ]
+"12323
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @784 ]
+"12343
+[v _CCPR2H CCPR2H `VEuc  1 e 1 @785 ]
+"12363
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @786 ]
+"12400
+[s S602 . 1 `uc 1 CCP2MODE 1 0 :4:0 
+`uc 1 CCP2FMT 1 0 :1:4 
+`uc 1 CCP2OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 CCP2EN 1 0 :1:7 
+]
+[s S608 . 1 `uc 1 CCP2MODE0 1 0 :1:0 
+`uc 1 CCP2MODE1 1 0 :1:1 
+`uc 1 CCP2MODE2 1 0 :1:2 
+`uc 1 CCP2MODE3 1 0 :1:3 
+]
+[s S613 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 P2M1 1 0 :1:7 
+]
+[u S616 . 1 `S38 1 . 1 0 `S44 1 . 1 0 `S602 1 . 1 0 `S608 1 . 1 0 `S613 1 . 1 0 ]
+[v _CCP2CONbits CCP2CONbits `VES616  1 e 1 @786 ]
+"12565
+[v _CCPR3L CCPR3L `VEuc  1 e 1 @788 ]
+"12585
+[v _CCPR3H CCPR3H `VEuc  1 e 1 @789 ]
+"12605
+[v _CCP3CON CCP3CON `VEuc  1 e 1 @790 ]
+"12642
+[s S448 . 1 `uc 1 CCP3MODE 1 0 :4:0 
+`uc 1 CCP3FMT 1 0 :1:4 
+`uc 1 CCP3OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 CCP3EN 1 0 :1:7 
+]
+[s S454 . 1 `uc 1 CCP3MODE0 1 0 :1:0 
+`uc 1 CCP3MODE1 1 0 :1:1 
+`uc 1 CCP3MODE2 1 0 :1:2 
+`uc 1 CCP3MODE3 1 0 :1:3 
+]
+[s S459 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 P3M1 1 0 :1:7 
+]
+[u S462 . 1 `S38 1 . 1 0 `S44 1 . 1 0 `S448 1 . 1 0 `S454 1 . 1 0 `S459 1 . 1 0 ]
+[v _CCP3CONbits CCP3CONbits `VES462  1 e 1 @790 ]
+"12807
+[v _CCPR4L CCPR4L `VEuc  1 e 1 @792 ]
+"12827
+[v _CCPR4H CCPR4H `VEuc  1 e 1 @793 ]
+"12847
+[v _CCP4CON CCP4CON `VEuc  1 e 1 @794 ]
+"12884
+[s S525 . 1 `uc 1 CCP4MODE 1 0 :4:0 
+`uc 1 CCP4FMT 1 0 :1:4 
+`uc 1 CCP4OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 CCP4EN 1 0 :1:7 
+]
+[s S531 . 1 `uc 1 CCP4MODE0 1 0 :1:0 
+`uc 1 CCP4MODE1 1 0 :1:1 
+`uc 1 CCP4MODE2 1 0 :1:2 
+`uc 1 CCP4MODE3 1 0 :1:3 
+]
+[s S536 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 P4M1 1 0 :1:7 
+]
+[u S539 . 1 `S38 1 . 1 0 `S44 1 . 1 0 `S525 1 . 1 0 `S531 1 . 1 0 `S536 1 . 1 0 ]
+[v _CCP4CONbits CCP4CONbits `VES539  1 e 1 @794 ]
+[s S113 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 TMR3IF 1 0 :1:2 
+`uc 1 TMR4IF 1 0 :1:3 
+`uc 1 TMR5IF 1 0 :1:4 
+`uc 1 TMR6IF 1 0 :1:5 
+]
+"19091
+[u S120 . 1 `S113 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES120  1 e 1 @1808 ]
+"19672
+[v _PMD0 PMD0 `VEuc  1 e 1 @1942 ]
+"19717
+[v _PMD1 PMD1 `VEuc  1 e 1 @1943 ]
+"19773
+[v _PMD2 PMD2 `VEuc  1 e 1 @1944 ]
+"19794
+[v _PMD3 PMD3 `VEuc  1 e 1 @1945 ]
+"19839
+[v _PMD4 PMD4 `VEuc  1 e 1 @1946 ]
+"19890
+[v _PMD5 PMD5 `VEuc  1 e 1 @1947 ]
+"19917
+[v _PMD6 PMD6 `VEuc  1 e 1 @1948 ]
+"19950
+[v _PMD7 PMD7 `VEuc  1 e 1 @1949 ]
+"21023
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"21163
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"21260
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"21311
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"21369
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"29867
+[v _RB4PPS RB4PPS `VEuc  1 e 1 @7964 ]
+"30099
+[v _RC0PPS RC0PPS `VEuc  1 e 1 @7968 ]
+"30157
+[v _RC1PPS RC1PPS `VEuc  1 e 1 @7969 ]
+"30215
+[v _RC2PPS RC2PPS `VEuc  1 e 1 @7970 ]
+"30563
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"30608
+[v _WPUA WPUA `VEuc  1 e 1 @7993 ]
+"30658
+[v _ODCONA ODCONA `VEuc  1 e 1 @7994 ]
+"30703
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @7995 ]
+"30948
+[v _ANSELB ANSELB `VEuc  1 e 1 @8003 ]
+"30987
+[v _WPUB WPUB `VEuc  1 e 1 @8004 ]
+"31026
+[v _ODCONB ODCONB `VEuc  1 e 1 @8005 ]
+"31065
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @8006 ]
+"31260
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+"31322
+[v _WPUC WPUC `VEuc  1 e 1 @8015 ]
+"31384
+[v _ODCONC ODCONC `VEuc  1 e 1 @8016 ]
+"31446
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @8017 ]
+"15 /Users/Evan/MPLABXProjects/LEDmovingflower.X/led.c
+[v _j j `us  1 e 2 0 ]
+"21 /Users/Evan/MPLABXProjects/LEDmovingflower.X/servo.c
+[v _i i `us  1 e 2 0 ]
+"26 /Users/Evan/MPLABXProjects/LEDmovingflower.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"41
+} 0
+"14 /Users/Evan/MPLABXProjects/LEDmovingflower.X/controller.c
+[v _controllerTask controllerTask `(v  1 e 1 0 ]
+{
+"21
+} 0
+"25 /Users/Evan/MPLABXProjects/LEDmovingflower.X/servo.c
+[v _moveRight moveRight `(v  1 e 1 0 ]
+{
+"34
+} 0
+"36
+[v _moveLeft moveLeft `(v  1 e 1 0 ]
+{
+"43
+} 0
+"26 /Users/Evan/MPLABXProjects/LEDmovingflower.X/led.c
+[v _colorCycle colorCycle `(v  1 e 1 0 ]
+{
+"32
+} 0
+"20
+[v _LED_setColor LED_setColor `(v  1 e 1 0 ]
+{
+[v LED_setColor@red red `uc  1 a 1 wreg ]
+[v LED_setColor@red red `uc  1 a 1 wreg ]
+[v LED_setColor@green green `uc  1 p 1 2 ]
+[v LED_setColor@blue blue `uc  1 p 1 3 ]
+[v LED_setColor@red red `uc  1 a 1 6 ]
+"24
+} 0
+"82 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/pwm4.c
+[v _PWM4_LoadDutyValue PWM4_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM4_LoadDutyValue@dutyValue dutyValue `us  1 p 2 0 ]
+"98
+} 0
+"82 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/pwm3.c
+[v _PWM3_LoadDutyValue PWM3_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM3_LoadDutyValue@dutyValue dutyValue `us  1 p 2 0 ]
+"98
+} 0
+"82 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/pwm2.c
+[v _PWM2_LoadDutyValue PWM2_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM2_LoadDutyValue@dutyValue dutyValue `us  1 p 2 0 ]
+"98
+} 0
+"82 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/pwm1.c
+[v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM1_LoadDutyValue@dutyValue dutyValue `us  1 p 2 0 ]
+"98
+} 0
+"36 /Users/Evan/MPLABXProjects/LEDmovingflower.X/led.c
+[v _colorCycle_init colorCycle_init `(v  1 e 1 0 ]
+{
+"185
+} 0
+"50 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"60
+} 0
+"62 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"86
+} 0
+"64 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/pwm4.c
+[v _PWM4_Initialize PWM4_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"64 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"64 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/pwm2.c
+[v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"64 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/pwm1.c
+[v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"76 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"55 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"110
+} 0
+"62 /Users/Evan/MPLABXProjects/LEDmovingflower.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"74
+} 0
